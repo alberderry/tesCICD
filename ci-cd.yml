@@ -1,6 +1,12 @@
 name: CI/CD Pipeline
 
-on: [push, pull_request]
+on:  
+  push:  
+    branches:  
+      - main  # Pipeline akan berjalan saat ada push ke branch main  
+  pull_request:  
+    branches:  
+      - main  # Pipeline juga berjalan saat ada pull request ke main  
 
 jobs:
   build:
